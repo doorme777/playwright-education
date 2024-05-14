@@ -99,21 +99,31 @@ Nos abrirá el navegador y lo que tienes que hacer para que funcione es usar el 
 ---
 # Bonus
 1. ¿Cómo se selecciona un elemento en Playwright? 
- a) `page.locator("#element_id").select()` 
- b) `page.select("#element_id")` 
- c) `page.locator("#element_id")` 
+ a) `page.locator("#element_id").select()`
+
+ b) `page.select("#element_id")`
+
+ c) `page.locator("#element_id")`
+
  d) `page.querySelector("#element_id")`
     
-2. ¿Cuál de las siguientes afirmaciones es correcta en Playwright? 
- a) `expect(await page.locator("#element_id").innerText()).toBe("Expected Text");` 
+3. ¿Cuál de las siguientes afirmaciones es correcta en Playwright? 
+ 
+ a) `expect(await page.locator("#element_id").innerText()).toBe("Expected Text");`
+
  b) `expect(page.locator("#element_id").innerText()).toBe("Expected Text");` 
+ 
  c) `expect(await page.locator("#element_id").innerText("Expected Text"));` 
+ 
  d) `expect(page.locator("#element_id").toBe("Expected Text"));`
     
 3. ¿Cual es la flag para debuggear un test en playwright? 
  a) `--debug`
+
  b) `--inspect`
+ 
  c) `DEBUG:pw:api`
+ 
  d) Todas las anteriores
     
 
