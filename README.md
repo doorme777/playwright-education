@@ -27,18 +27,22 @@ Para instalar con npm Playwright, debemos hacer lo siguiente:
 npm init playwright@latest
 ```
 Ok, nos abrirá unas opciones a elegir para saber qué queremos con Playwright. Primero nos pregunta dónde queremos los tests:
+
 ![Screenshot from 2024-05-14 09-55-13](https://github.com/doorme777/reto-01/assets/137806586/27b1ad56-a866-4fd0-8c10-c8af61a73bc7)
 
 
 Ahí nosotros agregaremos la ruta donde queremos poner los tests.
 
 Luego nos pregunta si queremos añadir GitHub Actions Workflow:
+
 ![Screenshot from 2024-05-14 09-56-04](https://github.com/doorme777/reto-01/assets/137806586/fddbe05f-cdba-4f1b-8081-41e072e220a3)
 
 Luego nos pregunta si queremos que instale los navegadores que tiene por defecto Playwright:
+
 ![Screenshot from 2024-05-14 09-58-39](https://github.com/doorme777/reto-01/assets/137806586/1f8abe58-96c4-4f41-a2df-8553437a85d5)
 
 Este proceso tiene que lanzarnos más o menos esto:
+
 ![Screenshot from 2024-05-14 10-00-24](https://github.com/doorme777/reto-01/assets/137806586/a9f36941-f425-4245-a88f-b0600bc90677)
 
 ---
@@ -58,6 +62,7 @@ await expect(page.getByTestId('status')).toHaveText('Submitted'); // Aquí esper
 ---
 # Trace mode
 Es una forma de ver cómo se ejecutó el test. Para comparar sería como el network de las devtools de Chrome. Esta opción viene deshabilitada por defecto, entonces cuando quieras ejecutar el test tendrás que poner la flag de `--trace on` para poder verlo. Se vería más o menos así:
+
 ![Screenshot from 2024-05-14 10-21-15](https://github.com/doorme777/reto-01/assets/137806586/d9294d2e-8f5e-4cc1-b717-609286a1ff9d)
 
 Este apartado va a estar abajo del reporte de las pruebas.
@@ -78,6 +83,7 @@ podemos poner algo antes de ejecutar el test para ver cómo anda en la CLI:
 DEBUG=pw:api npx playwright test # Esto cambiará según cómo se declaren las variables de entorno del sistema operativo.
 ```
 Esto nos debe dar un resultado igual a:
+
 ![Screenshot from 2024-05-14 10-28-25](https://github.com/doorme777/reto-01/assets/137806586/0257b46d-b80a-401a-a1ea-6cbedf9d70a4)
 
 Nos permite ver cuánto tarda un proceso, y sin necesidad de hacerlo más rápido.
