@@ -98,7 +98,8 @@ Nos abrirá el navegador y lo que tienes que hacer para que funcione es usar el 
 
 ---
 # Bonus
-1. ¿Cómo se selecciona un elemento en Playwright? 
+1. ¿Cómo se selecciona un elemento en Playwright?
+
  a) `page.locator("#element_id").select()`
 
  b) `page.select("#element_id")`
@@ -107,7 +108,7 @@ Nos abrirá el navegador y lo que tienes que hacer para que funcione es usar el 
 
  d) `page.querySelector("#element_id")`
     
-3. ¿Cuál de las siguientes afirmaciones es correcta en Playwright? 
+2. ¿Cuál de las siguientes afirmaciones es correcta en Playwright? 
  
  a) `expect(await page.locator("#element_id").innerText()).toBe("Expected Text");`
 
@@ -127,8 +128,9 @@ Nos abrirá el navegador y lo que tienes que hacer para que funcione es usar el 
  d) Todas las anteriores
     
 
-Respuestas correctas:
-
-1. c) `page.locator("#element_id")`
-2. a) `expect(await page.locator("#element_id").innerText()).toBe("Expected Text");`
-3. d)  `--debug`
+<details>
+<summary>Respuestas correctas:</summary>
+ <p>1. c) `page.locator("#element_id")`</p>
+ <p>2. a) `expect(await page.locator("#element_id").innerText()).toBe("Expected Text");`</p>
+ <p>3. d)  `--debug`</p>
+</details>
